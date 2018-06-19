@@ -2,6 +2,7 @@
 import Dashboard from "@material-ui/icons/Dashboard";
 import Person from "@material-ui/icons/Person";
 import ContentPaste from "@material-ui/icons/ContentPaste";
+import Face from '@material-ui/icons/Face';
 import LibraryBooks from "@material-ui/icons/LibraryBooks";
 import BubbleChart from "@material-ui/icons/BubbleChart";
 import LocationOn from "@material-ui/icons/LocationOn";
@@ -33,9 +34,16 @@ const dashboardRoutes = [
     component: UserProfile
   },
   {
-    path: "/table",
-    sidebarName: "Table List",
-    navbarName: "Table List",
+    path: "/customers",
+    sidebarName: "Customers",
+    navbarName: "Customers",
+    icon: Face,
+    component: TableList
+  },
+  {
+    path: "/orders",
+    sidebarName: "Orders",
+    navbarName: "Orders",
     icon: ContentPaste,
     component: TableList
   },
