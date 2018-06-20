@@ -8,6 +8,7 @@ import Table from "components/Table/Table.jsx";
 import Card from "components/Card/Card.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
+import TempCustomerData from 'temp_data/Customers';
 
 const styles = {
   cardCategoryWhite: {
@@ -54,15 +55,16 @@ function TableList(props) {
           <CardBody>
             <Table
               tableHeaderColor="primary"
-              tableHead={["Name", "Country", "City", "Salary"]}
-              tableData={[
-                ["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
-                ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
-                ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142"],
-                ["Philip Chaney", "Korea, South", "Overland Park", "$38,735"],
-                ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542"],
-                ["Mason Porter", "Chile", "Gloucester", "$78,615"]
-              ]}
+              tableHead={["CustomerID", "Company Name", "Contact", "Email", "Territory"]}
+              // tableData={[
+              //   ["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
+              //   ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
+              //   ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142"],
+              //   ["Philip Chaney", "Korea, South", "Overland Park", "$38,735"],
+              //   ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542"],
+              //   ["Mason Porter", "Chile", "Gloucester", "$78,615"]
+              // ]}
+              tableData = {<TempCustomerData />}
             />
           </CardBody>
         </Card>
